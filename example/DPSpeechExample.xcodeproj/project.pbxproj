@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2965E95C18599B1600DD27BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2965E95918599B1600DD27BE /* AppDelegate.m */; };
 		2965E95D18599B1600DD27BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2965E95B18599B1600DD27BE /* ViewController.m */; };
-		2965E96018599B2B00DD27BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2965E95E18599B2B00DD27BE /* Main.storyboard */; };
 		2965E96218599B3800DD27BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2965E96118599B3800DD27BE /* Images.xcassets */; };
 		2965E96618599B4D00DD27BE /* DPSpeechExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2965E96318599B4D00DD27BE /* DPSpeechExample-Info.plist */; };
 		2965E96718599B4D00DD27BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2965E96518599B4D00DD27BE /* main.m */; };
@@ -18,21 +17,8 @@
 		299179C21858986100D45851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299179C11858986100D45851 /* Foundation.framework */; };
 		299179C41858986100D45851 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299179C31858986100D45851 /* CoreGraphics.framework */; };
 		299179C61858986100D45851 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299179C51858986100D45851 /* UIKit.framework */; };
-		29917A221858986200D45851 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29917A211858986200D45851 /* XCTest.framework */; };
-		29917A231858986200D45851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299179C11858986100D45851 /* Foundation.framework */; };
-		29917A241858986200D45851 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299179C51858986100D45851 /* UIKit.framework */; };
 		29917A381858987600D45851 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29917A371858987600D45851 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		29917A251858986200D45851 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 299179B61858986100D45851 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 299179BD1858986100D45851;
-			remoteInfo = DBSpeechText;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2965E95818599B1600DD27BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DPSpeechExample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -51,7 +37,6 @@
 		299179C11858986100D45851 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		299179C31858986100D45851 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		299179C51858986100D45851 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		29917A201858986200D45851 /* DPSpeechExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPSpeechExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29917A211858986200D45851 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		29917A371858987600D45851 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -65,16 +50,6 @@
 				299179C41858986100D45851 /* CoreGraphics.framework in Frameworks */,
 				299179C61858986100D45851 /* UIKit.framework in Frameworks */,
 				299179C21858986100D45851 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29917A1D1858986200D45851 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29917A221858986200D45851 /* XCTest.framework in Frameworks */,
-				29917A241858986200D45851 /* UIKit.framework in Frameworks */,
-				29917A231858986200D45851 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				299179BE1858986100D45851 /* DPSpeechExample.app */,
-				29917A201858986200D45851 /* DPSpeechExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,24 +141,6 @@
 			productReference = 299179BE1858986100D45851 /* DPSpeechExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		29917A1F1858986200D45851 /* DPSpeechExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29917A341858986200D45851 /* Build configuration list for PBXNativeTarget "DPSpeechExampleTests" */;
-			buildPhases = (
-				29917A1C1858986200D45851 /* Sources */,
-				29917A1D1858986200D45851 /* Frameworks */,
-				29917A1E1858986200D45851 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				29917A261858986200D45851 /* PBXTargetDependency */,
-			);
-			name = DPSpeechExampleTests;
-			productName = DBSpeechTextTests;
-			productReference = 29917A201858986200D45851 /* DPSpeechExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,11 +149,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Darkness Production";
-				TargetAttributes = {
-					29917A1F1858986200D45851 = {
-						TestTargetID = 299179BD1858986100D45851;
-					};
-				};
 			};
 			buildConfigurationList = 299179B91858986100D45851 /* Build configuration list for PBXProject "DPSpeechExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -213,7 +164,6 @@
 			projectRoot = "";
 			targets = (
 				299179BD1858986100D45851 /* DPSpeechExample */,
-				29917A1F1858986200D45851 /* DPSpeechExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,14 +176,6 @@
 				2965E96218599B3800DD27BE /* Images.xcassets in Resources */,
 				2965E96B18599B5900DD27BE /* InfoPlist.strings in Resources */,
 				2965E96618599B4D00DD27BE /* DPSpeechExample-Info.plist in Resources */,
-				2965E96018599B2B00DD27BE /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29917A1E1858986200D45851 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,22 +193,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29917A1C1858986200D45851 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		29917A261858986200D45851 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 299179BD1858986100D45851 /* DPSpeechExample */;
-			targetProxy = 29917A251858986200D45851 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2965E95E18599B2B00DD27BE /* Main.storyboard */ = {
@@ -390,48 +317,6 @@
 			};
 			name = Release;
 		};
-		29917A351858986200D45851 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DPSpeechExample.app/DPSpeechExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DPSpeechExample/DPSpeechExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DPSpeechExampleTests/DPSpeechExampleTests-Info.plist";
-				PRODUCT_NAME = DPSpeechExampleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		29917A361858986200D45851 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DPSpeechExample.app/DPSpeechExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DPSpeechExample/DPSpeechExample-Prefix.pch";
-				INFOPLIST_FILE = "DPSpeechExampleTests/DPSpeechExampleTests-Info.plist";
-				PRODUCT_NAME = DPSpeechExampleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,15 +334,6 @@
 			buildConfigurations = (
 				29917A321858986200D45851 /* Debug */,
 				29917A331858986200D45851 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29917A341858986200D45851 /* Build configuration list for PBXNativeTarget "DPSpeechExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29917A351858986200D45851 /* Debug */,
-				29917A361858986200D45851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
